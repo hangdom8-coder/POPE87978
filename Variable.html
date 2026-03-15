@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Variable Lesson</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Kantumruy Pro', sans-serif;
+            background: linear-gradient(135deg, #0044ff 0%, #0033cc 60%, #e1d200 100%);
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-wrapper {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .nav-bar { margin-bottom: 20px; }
+
+        /* កែប្រែ Home ឱ្យទៅជា Link (Anchor Tag) */
+        .home-link {
+            background: black;
+            color: white;
+            text-decoration: none; /* ដកបន្ទាត់ពីក្រោមអក្សរ */
+            padding: 10px 35px;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-block; /* ដើម្បីឱ្យវាទទួលយក Padding */
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .home-link:hover {
+            background: #333;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .header-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-box h1 {
+            background: white;
+            color: #0044ff;
+            display: inline-block;
+            padding: 10px 80px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        .intro-text {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .code-card {
+            background: #1e1e1e;
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .rules-card {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        ol { padding-left: 20px; line-height: 1.8; }
+        ol li { margin-bottom: 10px; }
+        strong { color: #0044ff; }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="nav-bar">
+            <a href="index.php" class="home-link">Home</a>
+        </div>
+
+        <div class="header-box">
+            <h1>Variable</h1>
+        </div>
+
+        <p class="intro-text">
+            Variable (អថេរ) គឺជាទីតាំងមួយសម្រាប់រក្សាទុកទិន្នន័យក្នុងកម្មវិធី។<br>
+            វាអាចផ្ទុកតម្លៃផ្សេងៗ ដូចជា លេខ អក្សរ ឬ តម្លៃផ្សេងៗ។
+        </p>
+
+        <section>
+            <h2>1. របៀបប្រកាស Variable</h2>
+            <p>រាល់ <strong>Variable</strong> ក្នុង <strong>PHP</strong> ទាំងអស់ត្រូវតែចាប់ផ្តើមដោយសញ្ញាដុល្លារ <strong>$</strong> ជានិច្ច។ <strong>EX:</strong></p>
+            
+            <div class="code-card">
+                <pre>
+&lt;?php
+$name = "Heng Oudom"; // ប្រភេទអត្ថបទ (String)
+$age = 20;           // ប្រភេទលេខ (Integer)
+$gpa = 4.5;          // ប្រភេទលេខទសភាគ (Float)
+?&gt;</pre>
+            </div>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2>2. ការដាក់ឈ្មោះ Variable</h2>
+            <div class="rules-card">
+                <ol>
+                    <li>ត្រូវចាប់ផ្តើមដោយសញ្ញា <strong>$</strong></li>
+                    <li>បន្ទាប់ពីសញ្ញា <strong>$</strong> ត្រូវតែជា អក្សរ ឬសញ្ញា Underscore (_). មិនអាចចាប់ផ្តើមដោយលេខឡើយ។</li>
+                    <li>ឈ្មោះ Variable ដែលមានអក្សរតូច និងធំ គឺខុសគ្នា។ ឧទាហរណ៍ <strong>$color</strong> និង <strong>$COLOR</strong> គឺជា Variable ពីរផ្សេងគ្នា។</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

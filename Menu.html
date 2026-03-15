@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Chef's Specials</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Kantumruy+Pro:wght@300;400&display=swap');
+
+        body {
+            background-color: #0040ff; /* ពណ៌ក្រដាសចាស់ */
+            font-family: 'Kantumruy Pro', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .menu-container {
+            border: 2px solid #0400ff;
+            padding: 10px;
+            max-width: 500px;
+            width: 100%;
+            background: #f7f7f7;
+        }
+
+        .menu-inner {
+            border: 1px solid #000cf9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .menu-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #000000;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu-header p {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .menu-item {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-name {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c1e14;
+        }
+
+        .item-dots {
+            flex: 1;
+            border-bottom: 1px dotted #aaa;
+            margin: 0 10px;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: #4a3728;
+        }
+
+        .item-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .footer-buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #4a3728;
+            border: 1px solid #4a3728;
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: #4a3728;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-inner">
+            <div class="menu-header">
+                <h1>MENU</h1>
+                <p>Chef Special Selection of Skills </p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Web Application Deverlopment</span>
+                    <span class="item-dots"></span>
+                    <span class="item-price">$50</span>
+                </div>
+                <div class="item-description">
+                    Freshly born in Cambodia, seasoned with passion for technology and design.
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Programming</span>
+                    <span class="item-dots"></span>
+                    <span class="item-price">$20</span>
+                </div>
+                <div class="item-description">
+                    A mix of HTML5, CSS3, and JavaScript, served with a side of responsive design.
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Computer system</span>
+                    <span class="item-dots"></span>
+                    <span class="item-price">SWEET</span>
+                </div>
+                <div class="item-description">
+                    Photography, long-distance traveling, and a bottomless cup of iced coffee.
+                </div>
+            </div>
+
+            <div class="footer-buttons">
+                <a href="index.php" class="btn">Home</a>
+                <a href="https://www.youtube.com/" class="btn">Order Contact</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Types</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #1e3c72, #2a5298, #f9d423);
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    background: #eee;
+    color: #1e3c72;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.btn-home{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.box{
+    background: #eee;
+    color: black;
+    margin: 20px auto;
+    padding: 8px;
+    width: 60%;
+    font-weight: bold;
+}
+
+.code{
+    margin-top: 5px;
+    font-family: monospace;
+    color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.php" class="btn-home">Home</a>
+<div class="container">
+    <h1>Data Types</h1>
+
+    <h3>ប្រភេទទិន្នន័យ Data Types</h3>
+
+    <div class="box">1. Integer (ចំនួនគត់)</div>
+    <div class="code">$age = 25;</div>
+
+    <div class="box">2. Float / Double (ចំនួនទសភាគ)</div>
+    <div class="code">$price = 12.5;</div>
+
+    <div class="box">3. String (អក្សរ)</div>
+    <div class="code">$name = "Oudom";</div>
+
+    <div class="box">4. Boolean (true/false)</div>
+    <div class="code">$isLogin = true;</div>
+
+    <div class="box">5. Array (បញ្ជី)</div>
+    <div class="code">$colors = array("Red","Green","Blue");</div>
+
+    <div class="box">6. Object (Class)</div>
+    <div class="code">
+        class Car { <br>
+        &nbsp;&nbsp;public $color; <br>
+        } <br><br>
+        $myCar = new Car(); <br>
+        $myCar->color = "Red";
+    </div>
+
+    <div class="box">7. NULL</div>
+    <div class="code">$data = null;</div>
+
+    <div class="box">8. Resource</div>
+    <div class="code">
+        $conn = mysqli_connect("localhost","root","","test");
+    </div>
+</div>
+
+<script>
+function goHome(){
+    alert("Going to Home Page!");
+}
+</script>
+
+</body>
+</html>
